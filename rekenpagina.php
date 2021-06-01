@@ -26,31 +26,96 @@
         </nav>
     </header>
     <main>
-        <h1>Tafels Berekenen</h1>
-        <section id="tafel">
-            <h2>Op Mathmate.nl kun je op een eenvoudige manier alle tafels berekenen. De rekenopdrachten zijn simpel en overzichtelijk zodat je direct kan beginnen met het oefenen van de tafels. Kies onderstaand één van de tafels uit die je wil oefenen, laat zien wat je kan bij de tempotoets of print mooie werkbladen uit.</h2><br>
-            <p>Vermenigtal</p>
-            <input type="number" id="invoer">
-            <button id="knop">Genereer</button>
+    <section id="tafels">
+            <h1>Tafels</h1>
+            <form onsubmit="return genereerTafel();">
+                <p>
+                    <label>Vermenigvuldigtal:</label>
+                    <input id="tafel-vermenigvuldigtal" value="5" type="number">
+                </p>
+                <p>
+                    <label>Max vermenigvuldiger:</label>
+                    <input id="tafel-max-vermenigvuldiger" value="10" type="number">
+                </p>
+                <p>
+                    <button type="submit">Genereer tafel</button>
+                </p>
+                <p>
+                    <textarea readonly id="tafel-antwoord"></textarea>
+                </p>
+            </form>
         </section>
-        <div id="tafel-ant"></div>
+        <section id="kwadraten">
+            <h1>Tafels</h1>
+            <form onsubmit="return  genereerkwadraat();">
+                <p>
+                    <label>grondgetal:</label>
 
-        <section id="machtreeks">
-            <h1>Machtreeks berekenen</h1>
-            <p>Vermenigtal</p>
-            <input type="number" id="macht">
-            <button id="btn-macht">Genereer</button>
-            <div id="macht-ant"></div>
-        </section> 
+                    <input id="tafel-grondgetal" value="5" type="number">
+                </p>
+                <p>
+                    <label>Tot getal:</label>
+                    <input id="tafel-max-kwadraat" value="10" type="number">
+
+                    <input id="grondgetal" value="5" type="number">
+                </p>
+                <p>
+                    <label>Tot getal:</label>
+                    <input id="max-kwadraat" value="10" type="number">
+
+                </p>
+                <p>
+                    <button type="submit">Genereer tafel</button>
+                </p>
+                <p>
+                    <textarea readonly id="kwadraat-antwoord"></textarea>
+                </p>
+            </form>
+        </section>
         
-        <section id="machtreeks">
-            <h1>Machtreeks berekenen</h1>
-            <p>Vermenigtal</p>
-            <input type="number" id="breuk-max">
-            <input type="number" id="breuktal">
-            <button id="btn-breuk">Genereer</button>
-            <div id="breuk-antwoord"></div>
-        </section> 
+        
+        <!-- Breuken reeks -->
+        <section id="Breuken">
+            <h1>Breuken</h1>
+            <form onsubmit="return genereerBreuk();">
+                <p>
+                    <label>Noemer:</label>
+                    <input id="noemer" type="number">
+                </p>
+                <p>
+                    <button type="submit">Genereer tafel</button>
+                </p>
+                <p>
+                    <textarea readonly id="breuk-antwoord"></textarea>
+                </p>
+            </form>
+        </section>
+
+        
+        
+        <section id="kwadraten">
+
+        
+        <section id="">
+
+            <h1>Tafels</h1>
+            <form onsubmit="return genereerMacht();">
+                <p>
+                    <label>grondgetal:</label>
+                    <input id="macht-grondgetal" value="5" type="number">
+                </p>
+                <p>
+                    <label>Tot getal:</label>
+                    <input id="max-macht" value="10" type="number">
+                </p>
+                <p>
+                    <button type="submit">Genereer tafel</button>
+                </p>
+                <p>
+                    <textarea readonly id="Macht-antwoord"></textarea>
+                </p>
+            </form>
+        </section>
     </main>
 
     <footer>
