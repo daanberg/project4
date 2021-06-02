@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 360px) and (max-width:768px){
+
+}
+@media screen and (min-width: 768px) and (max-width:1200px){
+
+}
+@media screen and (min-width: 900px) and (max-width:1440px){
+    body{
+        background-color: #e6e6e6;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    ul li,  a:link, a:visited{
+        color: white;
+        text-decoration: none;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        width: 70vw;
+        margin-left: 15vw;
+    }
+    ul li{
+        list-style: none;
+        text-decoration: none;
+        font-family: Nunito;
+        float: left;
+        font-size: 1.5rem;
+        color: #3fb0ac;
+        height: 12vh;
+        width: 13vw;
+        background-color: black;
+    }
+    ul li img{
+        margin-top: -1.5vh;
+        margin-left: 3vw;
+    }
+    ul li a{
+        position: relative;
+        top: 3.5vh;
+        left: 3vw;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main p {
+        font-family: Nunito;
+        max-width: 60vw;
+        display: flex;
+        text-align: center;
+        margin-top: 5vh;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 75vw;
+        width: 50vw;
+        align-items: center;
+        justify-content: center;
+        margin-left: 29vw;
+        margin-top: 5vh;
+    }
+
+    .grid-container article {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: 20px;
+        text-align: center;
+        font-family: Nunito;
+    }
+    .grid-container img{
+        height: 200px;
+        width: 225px;
+    }
+
+    footer {
+        background-color: black;
+        display: flex;
+        margin-top: 10vh;
+        height: 20vh;
+    }
+
+    #footer p {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 1.5rem;
+        margin-left: 25px;
+        font-family: Nunito;
+        margin-top: 20px;
+    }
+
+    #footer2 img {
+        margin-top: -7vh;
+        margin-left: 20vw;
+        margin-bottom: -7vh;
+    }
+
+    #socials {
+        margin: 20px;
+        margin-left: 23vw;
+    }
+}
