@@ -50,11 +50,20 @@
             <form onsubmit="return  genereerkwadraat();">
                 <p>
                     <label>grondgetal:</label>
+
+                    <input id="tafel-grondgetal" value="5" type="number">
+                </p>
+                <p>
+                    <label>Tot getal:</label>
+                    <input id="tafel-max-kwadraat" value="10" type="number">
+
+
                     <input id="grondgetal" value="5" type="number">
                 </p>
                 <p>
                     <label>Tot getal:</label>
                     <input id="max-kwadraat" value="10" type="number">
+
                 </p>
                 <p>
                     <button type="submit">Genereer tafel</button>
@@ -64,9 +73,37 @@
                 </p>
             </form>
         </section>
+        
+        
         <!-- Breuken reeks -->
 
+        <section id="Breuken">
+            <h1>Breuken</h1>
+            <form onsubmit="return genereerBreuk();">
+                <p>
+                    <label>Noemer:</label>
+                    <input id="noemer" type="number">
+                </p>
+                <p>
+                    <button type="submit">Genereer tafel</button>
+                </p>
+                <p>
+                    <textarea readonly id="breuk-antwoord"></textarea>
+                </p>
+            </form>
+        </section>
+
+        
+        
+        <section id="kwadraten">
+
+        
+        <section id="">
+
+
+
         <section id="Machtreeks">
+
             <h1>Tafels</h1>
             <form onsubmit="return genereerMacht();">
                 <p>
