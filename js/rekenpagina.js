@@ -33,8 +33,17 @@ function genereerMacht() {
 // Breuken (Oskar)
 
 function genereerkwadraat() {
+
+
+    var grondgetal = document.getElementById("tafel-grondgetal").value; // De invoer van de gebruiker
+    var maxKwadraat = document.getElementById("tafel-max-kwadraat").value;
+
     var grondgetal = document.getElementById("grondgetal").value; // De invoer van de gebruiker
     var maxKwadraat = document.getElementById("max-kwadraat").value;
+
+    var grondgetal = document.getElementById("grondgetal").value; // De invoer van de gebruiker
+    var maxKwadraat = document.getElementById("max-kwadraat").value;
+
     var antwoordKwadraat = document.getElementById("kwadraat-antwoord");
     
     antwoordKwadraat.value = ""; // We beginnen elke reeks met een leeg antwoord veld
@@ -45,6 +54,15 @@ function genereerkwadraat() {
         antwoordKwadraat.value += vermenigvuldiging + "\n"; // We de berekening toe aan het antwoord veld afgesloten met een nieuwe regel \n
     }
     return false
+
+
+    for(var vermenigvuldiger = 0; vermenigvuldiger <= maxKwadraat; vermenigvuldiger++ && grondgetal++) {
+        var product = grondgetal * grondgetal;  // We rekenen het product uit van 1 vermenigvuldiging
+        var vermenigvuldiging = grondgetal + " x " + grondgetal + " = " + product; // Dit is de tekstuele berekening die we kunnen toevoegen aan het antwoordveld.
+        antwoordKwadraat.value += vermenigvuldiging + "\n"; // We de berekening toe aan het antwoord veld afgesloten met een nieuwe regel \n
+    }
+    return false;
+
     
     // btnBreuk.onclick = function genereerTafel() {
     var vermenigvuldigtal = document.getElementById("breuktal").value; // De invoer van de gebruiker
@@ -61,4 +79,21 @@ function genereerkwadraat() {
 
     return false; // We moeten false returnen, om te voorkomen dat de browser de pagina herlaad.
 
+}
+
+
+    // Breuken (Oskar)
+function genereerBreuk() {
+    var Noemer = document.getElementById("noemer").value; // De invoer van de gebruiker
+    var antwoordBreuk = document.getElementById("breuk-antwoord");
+    
+    antwoordBreuk.value = " "; // We beginnen elke reeks met een leeg antwoord veld
+
+    for(var i = 1; i <= Noemer; i++) {
+        var product = 1 / i;  // We rekenen het product uit van 1 vermenigvuldiging
+        var breuk = 1 + " / " + i + " = " + product+"|"; // Dit is de tekstuele berekening die we kunnen toevoegen aan het antwoordveld.
+        antwoordBreuk.value += breuk + "\n"; // We de berekening toe aan het antwoord veld afgesloten met een nieuwe regel \n
+    }
+
+    return false; // We moeten false returnen, om te voorkomen dat de browser de pagina herlaad.
 }
