@@ -65,8 +65,8 @@
             </form>
         </section>
         <!-- Breuken reeks -->
-        
-        <section id="">
+
+        <section id="Machtreeks">
             <h1>Tafels</h1>
             <form onsubmit="return genereerMacht();">
                 <p>
@@ -78,7 +78,7 @@
                     <input id="max-macht" value="10" type="number">
                 </p>
                 <p>
-                    <button type="submit">Genereer tafel</button>
+                    <button type="submit">Genereer Macht</button>
                 </p>
                 <p>
                     <textarea readonly id="Macht-antwoord"></textarea>
