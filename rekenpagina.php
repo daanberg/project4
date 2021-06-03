@@ -85,6 +85,28 @@
                 </p>
             </form>
         </section>
+
+        <section id="priemgetal">
+            <h1>Priemgetallen</h1>
+            <form onsubmit="return genereerPriem();">
+                <p>
+                    <label>grondgetal:</label>
+                    <input id="priem-grondgetal" value="5" type="number">
+                </p>
+                <p>
+                    <label>Tot getal:</label>
+                    <input id="max-priem" value="10" type="number">
+                </p>
+                <p>
+                    <button type="submit">Genereer priem</button>
+                </p>
+                <p> 
+                    <textarea readonly id="priem-antwoord"></textarea>
+                </p>
+            </form>
+        </section>
+            
+        
     </main>
 
     <footer>
