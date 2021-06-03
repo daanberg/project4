@@ -25,7 +25,9 @@
                 </section>
             </nav>
     </header>
-
+<main> 
+    
+</main>
 
     <footer>
         <section id="footer">
@@ -40,5 +42,6 @@
             <a href="https://www.facebook.com/"><img src="img/facebook2.png" height="75vh"></a>
         </section>
     </footer>
+    <script src="js/rekenpagina2.js" type=text/javascript></script>
 </body>
 </html>
