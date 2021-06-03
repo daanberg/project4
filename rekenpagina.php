@@ -46,23 +46,15 @@
             </form>
         </section>
         <section id="kwadraten">
-            <h1>Tafels</h1>
+            <h1>Kwadraten</h1>
             <form onsubmit="return  genereerkwadraat();">
                 <p>
                     <label>grondgetal:</label>
-<<<<<<< Updated upstream
-                    <input id="tafel-grondgetal" value="5" type="number">
-                </p>
-                <p>
-                    <label>Tot getal:</label>
-                    <input id="tafel-max-kwadraat" value="10" type="number">
-=======
                     <input id="grondgetal" value="5" type="number">
                 </p>
                 <p>
                     <label>Tot getal:</label>
                     <input id="max-kwadraat" value="10" type="number">
->>>>>>> Stashed changes
                 </p>
                 <p>
                     <button type="submit">Genereer tafel</button>
@@ -73,13 +65,8 @@
             </form>
         </section>
         <!-- Breuken reeks -->
-<<<<<<< Updated upstream
-
-        <section id="kwadraten">
-=======
         
         <section id="">
->>>>>>> Stashed changes
             <h1>Tafels</h1>
             <form onsubmit="return genereerMacht();">
                 <p>
