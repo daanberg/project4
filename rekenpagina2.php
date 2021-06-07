@@ -7,7 +7,7 @@
     <meta name="author" content="Kevin Xue">
     <meta name="keywords" content=" ">
     <title>Homepagina</title>
-    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/rekenpagina2.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 </head>
@@ -26,7 +26,21 @@
             </nav>
     </header>
 <main> 
-    
+  <section id="fib-reeks">
+            <h1>Fibonacci-reeks</h1>
+            <form onsubmit="return genereerFib();">
+                <p>
+                    <label>Tot getal:</label>
+                    <input id="fib-max" type="number">
+                </p>
+                <p>
+                    <button type="submit">Genereer Fibonacci-reeks</button>
+                </p>
+                <p>
+                    <textarea readonly id="Fib-antwoord"></textarea>
+                </p>
+            </form>
+        </section>  
 </main>
 
     <footer>
