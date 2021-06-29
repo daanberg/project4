@@ -37,7 +37,10 @@
                     <button type="submit">Genereer Fibonacci-reeks</button>
                 </p>
                 <p>
+
                     <textarea readonly id="fib-antwoord"></textarea>
+
+
                 </p>
             </form>
         </section>  
