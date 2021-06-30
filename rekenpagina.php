@@ -16,11 +16,11 @@
         <nav>
              <section id="navbar">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Rekenpagina</a></li>
+                        <li><a href="Homepagina.php">Home</a></li>
+                        <li><a href="rekenpagina.php">Eenvoudige Rekenpagina</a></li>
                         <li><img src="img/thereal.png" height="100vh"></li>
+                        <li><a href="rekenpagina2.php">Moeilijke Rekenpagina</a></li>
                         <li><a href="">Game</a></li>
-                        <li><a href="">Contact</a></li>
                     </ul>
             </section>
         </nav>
@@ -45,25 +45,13 @@
                 </p>
             </form>
         </section>
-        <section id="kwadraten">
-            <h1>Kwadraten</h1>
-            <form onsubmit="return  genereerkwadraat();">
+        
+        <section id="machtreeks">
+            <h1>Machten</h1>
+            <form onsubmit="return genereerMacht();">
                 <p>
                     <label>grondgetal:</label>
-
-                    <input id="tafel-grondgetal" value="5" type="number">
-                </p>
-                <p>
-                    <label>Tot getal:</label>
-                    <input id="tafel-max-kwadraat" value="10" type="number">
-
-
-                    <input id="grondgetal" value="5" type="number">
-                </p>
-                <p>
-                    <label>Tot getal:</label>
-                    <input id="max-kwadraat" value="10" type="number">
-
+                    <input id="noemer" type="number">
                 </p>
                 <p>
                     <button type="submit">Genereer tafel</button>
@@ -73,7 +61,6 @@
                 </p>
             </form>
         </section>
-        
         
         <!-- Breuken reeks -->
 
@@ -93,39 +80,43 @@
             </form>
         </section>
 
-        
-        
+
+
+
         <section id="kwadraten">
 
-        
-        <section id="">
-
-
-
-        <section id="Machtreeks">
-
-            <h1>Tafels</h1>
-            <form onsubmit="return genereerMacht();">
+            <h1>Kwadraten</h1>
+            <form onsubmit="return genereerKwadraat();">
                 <p>
                     <label>grondgetal:</label>
                     <input id="macht-grondgetal" value="5" type="number">
                 </p>
                 <p>
-                    <label>Tot getal:</label>
-                    <input id="max-macht" value="10" type="number">
+                    <label>Max Kwadraat:</label>
+                    <input id="max-Kwadraat" value="10" type="number">
                 </p>
                 <p>
-                    <button type="submit">Genereer Macht</button>
+                    <button type="submit">Genereer kwadraat</button>
                 </p>
                 <p>
-                    <textarea readonly id="Macht-antwoord"></textarea>
+                    <textarea readonly id="macht-antwoord"></textarea>
                 </p>
             </form>
         </section>
     </main>
 
     <footer>
-
+        <section id="footer">
+            <p><b>Contactgegevens</b><br>Email: info@mathmate.nl<br>Tel: 070 342 23 65</p>
+        </section>
+        <section id="footer2">
+            <a href="homepage.php"><img src="img/logoperiode4.png" height="250vh"></a>
+        </section>
+        <section id="socials">
+            <a href="https://www.instagram.com/daily_math_/"><img src="img/instagram.png" height="75vh"></a>
+            <a href="https://www.twitter.com/"><img src="img/twitter.png" height="75vh"></a>
+            <a href="https://www.facebook.com/"><img src="img/facebook2.png" height="75vh"></a>
+        </section>
     </footer>
     <script src="js/rekenpagina.js" type=text/javascript></script>
 </body>

@@ -11,7 +11,7 @@
 @media screen and (min-width: 1200px){
     body{
         background-color: #e6e6e6;
-        width: 100vw;
+        width: 100vw;   
     }
     ul li,  a:link, a:visited{
         color: white;
@@ -45,14 +45,23 @@
     }
     #tafels{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-top: 3vh;
     }
     #machtreeks{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin-top: 3vh;
+    }
+    #Breuken{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 3vh;
     }
     main h1{
@@ -98,8 +107,9 @@
     }
     #kwadraten{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-top: 3vh;
     }
     
@@ -109,9 +119,69 @@
         width: 40vw;
         height: 25vh;
         border: 1px solid black;
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #tafel-antwoord{
+        display: flex;
+        background-color: white;
+        width: 40vw;
+        height: 25vh;
+        border: 1px solid black;
         text-align: right;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    #macht-antwoord{
+        display: flex;
+        background-color: white;
+        width: 40vw;
+        height: 25vh;
+        border: 1px solid black;
+        text-align: right;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #kwadraat-antwoord{
+        display: flex;
+        background-color: white;
+        width: 40vw;
+        height: 25vh;
+        border: 1px solid black;
+        text-align: right;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        background-color: black;
+        display: flex;
+        margin-top: 10vh;
+        height: 20vh;
+    }
+
+    #footer p {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 1.5rem;
+        margin-left: 25px;
+        font-family: Nunito;
+        margin-top: 20px;
+    }
+
+    #footer2 img {
+        margin-top: -7vh;
+        margin-left: 20vw;
+        margin-bottom: -7vh;
+    }
+
+    #socials {
+        margin: 20px;
+        margin-left: 23vw;
     }
 }
